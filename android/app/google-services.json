@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "899727203281",
+    "firebase_url": "https://flash-chat-1d770.firebaseio.com",
+    "project_id": "flash-chat-1d770",
+    "storage_bucket": "flash-chat-1d770.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899727203281:android:96211b49cecbf23dbe1ef0",
+        "android_client_info": {
+          "package_name": "co.classicdude.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899727203281-r5fk22ec14k4ji9kupn6ga3ok71dd7sq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV5PKLe1I926q54Sam564-UDiwdsjn2Lc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899727203281-r5fk22ec14k4ji9kupn6ga3ok71dd7sq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
