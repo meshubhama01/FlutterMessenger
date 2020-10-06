@@ -20,7 +20,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     super.initState();
     controller =
         AnimationController(duration: Duration(seconds: 1), vsync: this);
-    animation = ColorTween(begin: Colors.blueGrey, end: Colors.white)
+    animation = ColorTween(begin: Colors.blueGrey, end: Colors.tealaccent)
         .animate(controller);
     controller.forward();
     controller.addListener(() {
@@ -47,28 +47,28 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             Row(
               children: <Widget>[
                 Hero(
-                  tag: 'logo',
+                  tag: 'logo-of the company',
                   child: Container(
                     child: Image.asset('images/logo.png'),
-                    height: 60.0,
+                    height: 55.0,
                   ),
                 ),
                 TypewriterAnimatedTextKit(
-                  speed: Duration(milliseconds: 250),
+                  speed: Duration(milliseconds: 220),
                   repeatForever: true,
                   text: ['Flash Chat'],
                   textStyle: TextStyle(
-                    fontSize: 45.0,
+                    fontSize: 41.0,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ],
             ),
             SizedBox(
-              height: 48.0,
+              height: 44.0,
             ),
             RoundedButton(
-              title: 'Log In',
+              title: 'sign In',
               colour: Colors.lightBlueAccent,
               onPressed: () {
                 Navigator.pushNamed(context, LoginScreen.id);
@@ -76,7 +76,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             ),
             RoundedButton(
               title: 'Register',
-              colour: Colors.blueAccent,
+              colour: Colors.greenAccent,
               onPressed: () {
                 Navigator.pushNamed(context, RegistrationScreen.id);
               },
