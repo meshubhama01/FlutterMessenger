@@ -32,7 +32,8 @@ class _ChatScreenState extends State<ChatScreen> {
         loggedInUser = user;
       }
     } catch (e) {
-      print(e);
+      //print(e);
+      Navigator.pop(context);
     }
   }
 
@@ -171,7 +172,7 @@ class MessageBubble extends StatelessWidget {
               topRight: Radius.circular(30.0),
             ),
             elevation: 5.0,
-            color: isMe ? Colors.lightBlueAccent : Colors.white,
+            color: isMe ? Colors.lighttealAccent : Colors.green,
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
               child: Text(
