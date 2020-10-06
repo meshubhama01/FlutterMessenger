@@ -20,11 +20,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.yellolw,
       body: ModalProgressHUD(
         inAsyncCall: showSpinner,
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 24.0),
+          padding: EdgeInsets.symmetric(horizontal: 22.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -33,13 +33,13 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 child: Hero(
                   tag: 'logo',
                   child: Container(
-                    height: 200.0,
+                    height: 190.0,
                     child: Image.asset('images/logo.png'),
                   ),
                 ),
               ),
               SizedBox(
-                height: 48.0,
+                height: 45.0,
               ),
               TextField(
                 keyboardType: TextInputType.emailAddress,
@@ -52,20 +52,20 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   contentPadding:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                    borderRadius: BorderRadius.all(Radius.circular(30.0)),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.blueAccent, width: 1.0),
-                    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                    borderRadius: BorderRadius.all(Radius.circular(30.0)),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.blueAccent, width: 2.0),
-                    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                    borderRadius: BorderRadius.all(Radius.circular(30.0)),
                   ),
                 ),
               ),
               SizedBox(
-                height: 8.0,
+                height: 7.0,
               ),
               TextField(
                 obscureText: true,
@@ -78,27 +78,27 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   contentPadding:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                    borderRadius: BorderRadius.all(Radius.circular(30.0)),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.blueAccent, width: 1.0),
-                    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                    borderRadius: BorderRadius.all(Radius.circular(30.0)),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.blueAccent, width: 2.0),
-                    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                    borderRadius: BorderRadius.all(Radius.circular(30.0)),
                   ),
                 ),
               ),
               SizedBox(
-                height: 24.0,
+                height: 22.0,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 16.0),
                 child: Material(
                   color: Colors.blueAccent,
                   borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                  elevation: 5.0,
+                  elevation: 7.0,
                   child: MaterialButton(
                     onPressed: () async {
                       setState(() {
@@ -119,8 +119,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         print(e);
                       }
                     },
-                    minWidth: 200.0,
-                    height: 42.0,
+                    minWidth: 190.0,
+                    height: 40.0,
                     child: Text(
                       'Register',
                       style: TextStyle(color: Colors.white),
